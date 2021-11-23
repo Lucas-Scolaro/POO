@@ -20,11 +20,7 @@ public class Principal {
         carro.setPlaca("MPO-6598");
         carro.setTipo("Fusca");
        
-        System.out.println("---------CARRO---------");
-        System.out.println("Cor do carro: "+carro.getCor());
-        System.out.println("Numero de portas: "+carro.getNumPortas());
-        System.out.println("Placa do carro: "+carro.getPlaca());
-        System.out.println("Modelo do carro: "+carro.getTipo());
+        carro.imprimeDadosCarro();
         
         
     }
