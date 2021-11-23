@@ -20,7 +20,12 @@ public class Principal {
         carro.setPlaca("MPO-6598");
         carro.setTipo("Fusca");
        
-        carro.imprimeDadosCarro();
+       // carro.imprimeDadosCarro();
+        
+        double a=3;
+        System.out.println("Quadrado de "+a+" "
+                + "é: "+Calculo.elevar(a));
+        
         
         
     }
