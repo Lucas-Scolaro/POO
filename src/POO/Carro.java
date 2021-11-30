@@ -15,6 +15,54 @@ public class Carro {
     String cor;
     String placa;
     int numPortas;
+    int cambio;
+
+    public int getCambio() {
+        System.out.println("Marcha: "+this.cambio);
+        return cambio;
+    }
+
+    public void setCambio(int cambio) {
+        this.cambio = cambio;
+    }
+    Pessoa dono;
+    
+    void ligar(){
+        System.out.println("Ligando Carro");
+    }
+    void desligar(){
+        System.out.println("Desligando Carro");
+    }
+    void acelerar(){
+        System.out.println("Acelerando Carro");
+    }
+    void frear(){
+        System.out.println("Freando carro");
+    }
+
+    public Pessoa getDono() {
+        return dono;
+    }
+
+    public void setDono(Pessoa dono) {
+        this.dono = dono;
+    }
+    
+    public Carro(){
+        
+    }
+        
+    public Carro(String tipo, String cor, String placa, int numPortas) {
+        this.tipo = tipo;
+        this.cor = cor;
+        this.placa = placa;
+        this.numPortas = numPortas;
+
+    }
+
+    {
+
+    }
 
     void imprimeDadosCarro() {
         System.out.println("---------CARRO---------");
@@ -22,6 +70,7 @@ public class Carro {
         System.out.println("Numero de portas: " + numPortas);
         System.out.println("Placa do carro: " + placa);
         System.out.println("Modelo do carro: " + tipo);
+        System.out.println("Dono: "+dono.nome);
     }
 
     public String getTipo() {
